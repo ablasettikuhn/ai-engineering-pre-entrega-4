@@ -1,0 +1,4 @@
+10:13:25 | INFO    | setup | El índice 'papers-ciencias-deporte' ya existe.
+10:13:26 | INFO    | setup | Estado del índice 'papers-ciencias-deporte':
+10:13:26 | INFO    | setup |   dimensión: 1536 | métrica: cosine | vectores totales: 202
+10:13:26 | INFO    | setup |   namespace 'papers-cientificos': 202 vectores  <- namespace de este proyecto

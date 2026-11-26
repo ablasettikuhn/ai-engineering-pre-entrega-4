@@ -1,0 +1,83 @@
+==============================================================================
+ EVALUACIÓN DEL RECUPERADOR  |  Precision@5 y Recall@5 (+ MRR)
+ Índice 'papers-ciencias-deporte' / namespace 'papers-cientificos' | 202 chunks de 8 papers | 5 preguntas
+ Ensemble: BM25 0.4 + vectorial 0.6 (cada uno aporta 10 candidatos; se devuelven 5)
+==============================================================================
+
+DETALLE (modo híbrido)
+
+q1. ¿Cómo se calcula la carga de entrenamiento con el método session-RPE de Foster y qué tan válido es?
+    tipo: sigla + nombre propio (session-RPE, Foster) | esperado: haddad-2017
+    OK 1. haddad-2017          p.1   (bm25+vectorial)
+    OK 2. haddad-2017          p.2   (bm25+vectorial)
+    OK 3. haddad-2017          p.3   (bm25+vectorial)
+    OK 4. haddad-2017          p.3   (bm25+vectorial)
+    OK 5. haddad-2017          p.1   (bm25+vectorial)
+    Recall@5 = 1 | Precision@5 = 1.00 | RR = 1.00
+
+q2. ¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz para medir la distancia y la velocidad pico en deportes de equipo?
+    tipo: término técnico + cifras (GNSS, 10 Hz, 18 Hz) | esperado: beato-2018
+    OK 1. beato-2018           p.6   (bm25+vectorial)
+    OK 2. beato-2018           p.4   (bm25+vectorial)
+    OK 3. beato-2018           p.5   (bm25+vectorial)
+    OK 4. beato-2018           p.2   (bm25+vectorial)
+    OK 5. beato-2018           p.5   (bm25+vectorial)
+    Recall@5 = 1 | Precision@5 = 1.00 | RR = 1.00
+
+q3. ¿Es más útil el índice de Hooper o la variabilidad de la frecuencia cardíaca (HRV) para seguir la fatiga en los días posteriores a un partido de fútbol?
+    tipo: nombre propio (índice de Hooper) + sigla (HRV) | esperado: rabbani-2019
+    OK 1. rabbani-2019         p.1   (bm25+vectorial)
+    OK 2. rabbani-2019         p.1   (bm25+vectorial)
+    OK 3. rabbani-2019         p.6   (bm25+vectorial)
+    OK 4. rabbani-2019         p.2   (bm25+vectorial)
+    OK 5. rabbani-2019         p.6   (bm25+vectorial)
+    Recall@5 = 1 | Precision@5 = 1.00 | RR = 1.00
+
+q4. ¿Se pueden predecir las lesiones de jugadores de fútbol profesional a partir de los datos de GPS de los entrenamientos con machine learning?
+    tipo: conceptual (pregunta de significado, sin siglas raras) | esperado: rossi-2018
+    OK 1. rossi-2018           p.1   (bm25+vectorial)
+    OK 2. rossi-2018           p.1   (bm25+vectorial)
+    OK 3. rossi-2018           p.11  (bm25+vectorial)
+    OK 4. rossi-2018           p.3   (bm25+vectorial)
+    OK 5. rossi-2018           p.2   (vectorial)
+    Recall@5 = 1 | Precision@5 = 1.00 | RR = 1.00
+
+q5. ¿Qué medidas de frecuencia cardíaca en reposo, durante el ejercicio y en la recuperación post-ejercicio (HRR) sirven para monitorear el estado de entrenamiento?
+    tipo: conceptual con dos papers relevantes (HRR, HRV) | esperado: buchheit-2014
+    OK 1. buchheit-2014        p.5   (bm25+vectorial)
+       2. schneider-2018       p.4   (bm25+vectorial)
+    OK 3. buchheit-2014        p.2   (bm25+vectorial)
+    OK 4. buchheit-2014        p.5   (bm25+vectorial)
+       5. schneider-2018       p.4   (bm25+vectorial)
+    Recall@5 = 1 | Precision@5 = 1.00 | RR = 1.00
+
+ACIERTOS POR PREGUNTA (Recall@5: 1 = el paper esperado está en el Top-5)
+    pregunta      hibrido   vectorial        bm25
+    q1                  1           1           1
+    q2                  1           1           1
+    q3                  1           1           1
+    q4                  1           1           1
+    q5                  1           1           1
+
+CONTROL DE PREGUNTAS TRAMPA (umbral mínimo de similitud = 0.70)
+    id   tipo     similitud  esperado       resultado
+    q1   golden       0.770  con evidencia  PASA
+    q2   golden       0.822  con evidencia  PASA
+    q3   golden       0.833  con evidencia  PASA
+    q4   golden       0.823  con evidencia  PASA
+    q5   golden       0.760  con evidencia  PASA
+    t1   trampa       0.645  sin evidencia  PASA
+    t2   trampa       0.614  sin evidencia  PASA
+    Mínima del golden set: 0.760 | máxima de las trampa: 0.645
+    Umbral que separa ambos grupos (punto medio): 0.703
+
+VERIFICACIONES AUTOMÁTICAS
+    [PASA] Los papers esperados del golden set están en Pinecone
+    [PASA] El umbral separa las preguntas reales de las trampa
+
+RESUMEN (promedio de las preguntas)
+    modo            Recall@5   Precision@5     MRR
+    hibrido             1.00          1.00    1.00
+    vectorial           1.00          1.00    1.00
+    bm25                1.00          0.96    1.00
+==============================================================================

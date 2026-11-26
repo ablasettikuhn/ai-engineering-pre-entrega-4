@@ -1,0 +1,722 @@
+{
+  "fecha": "2026-11-26T10:29:03",
+  "indice": "papers-ciencias-deporte",
+  "namespace": "papers-cientificos",
+  "k": 5,
+  "k_candidatos": 10,
+  "pesos_ensemble": {
+    "bm25": 0.4,
+    "vectorial": 0.6
+  },
+  "chunks_en_corpus": 202,
+  "papers_en_corpus": 8,
+  "preguntas": 5,
+  "resumen": {
+    "hibrido": {
+      "recall@5": 1.0,
+      "precision@5": 1.0,
+      "mrr": 1.0
+    },
+    "vectorial": {
+      "recall@5": 1.0,
+      "precision@5": 1.0,
+      "mrr": 1.0
+    },
+    "bm25": {
+      "recall@5": 1.0,
+      "precision@5": 0.96,
+      "mrr": 1.0
+    }
+  },
+  "detalle": {
+    "hibrido": [
+      {
+        "id": "q1",
+        "pregunta": "¿Cómo se calcula la carga de entrenamiento con el método session-RPE de Foster y qué tan válido es?",
+        "tipo": "sigla + nombre propio (session-RPE, Foster)",
+        "esperado": "haddad-2017",
+        "recuperados": [
+          {
+            "chunk_id": "haddad-2017-c001",
+            "doc_id": "haddad-2017",
+            "pagina": 1,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c002",
+            "doc_id": "haddad-2017",
+            "pagina": 2,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c005",
+            "doc_id": "haddad-2017",
+            "pagina": 3,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c004",
+            "doc_id": "haddad-2017",
+            "pagina": 3,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c000",
+            "doc_id": "haddad-2017",
+            "pagina": 1,
+            "encontrado_por": "bm25+vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q2",
+        "pregunta": "¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz para medir la distancia y la velocidad pico en deportes de equipo?",
+        "tipo": "término técnico + cifras (GNSS, 10 Hz, 18 Hz)",
+        "esperado": "beato-2018",
+        "recuperados": [
+          {
+            "chunk_id": "beato-2018-c012",
+            "doc_id": "beato-2018",
+            "pagina": 6,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c007",
+            "doc_id": "beato-2018",
+            "pagina": 4,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c010",
+            "doc_id": "beato-2018",
+            "pagina": 5,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c005",
+            "doc_id": "beato-2018",
+            "pagina": 2,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c011",
+            "doc_id": "beato-2018",
+            "pagina": 5,
+            "encontrado_por": "bm25+vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q3",
+        "pregunta": "¿Es más útil el índice de Hooper o la variabilidad de la frecuencia cardíaca (HRV) para seguir la fatiga en los días posteriores a un partido de fútbol?",
+        "tipo": "nombre propio (índice de Hooper) + sigla (HRV)",
+        "esperado": "rabbani-2019",
+        "recuperados": [
+          {
+            "chunk_id": "rabbani-2019-c002",
+            "doc_id": "rabbani-2019",
+            "pagina": 1,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c001",
+            "doc_id": "rabbani-2019",
+            "pagina": 1,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c014",
+            "doc_id": "rabbani-2019",
+            "pagina": 6,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c004",
+            "doc_id": "rabbani-2019",
+            "pagina": 2,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c016",
+            "doc_id": "rabbani-2019",
+            "pagina": 6,
+            "encontrado_por": "bm25+vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q4",
+        "pregunta": "¿Se pueden predecir las lesiones de jugadores de fútbol profesional a partir de los datos de GPS de los entrenamientos con machine learning?",
+        "tipo": "conceptual (pregunta de significado, sin siglas raras)",
+        "esperado": "rossi-2018",
+        "recuperados": [
+          {
+            "chunk_id": "rossi-2018-c000",
+            "doc_id": "rossi-2018",
+            "pagina": 1,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c001",
+            "doc_id": "rossi-2018",
+            "pagina": 1,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c015",
+            "doc_id": "rossi-2018",
+            "pagina": 11,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c005",
+            "doc_id": "rossi-2018",
+            "pagina": 3,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c004",
+            "doc_id": "rossi-2018",
+            "pagina": 2,
+            "encontrado_por": "vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q5",
+        "pregunta": "¿Qué medidas de frecuencia cardíaca en reposo, durante el ejercicio y en la recuperación post-ejercicio (HRR) sirven para monitorear el estado de entrenamiento?",
+        "tipo": "conceptual con dos papers relevantes (HRR, HRV)",
+        "esperado": "buchheit-2014",
+        "recuperados": [
+          {
+            "chunk_id": "buchheit-2014-c012",
+            "doc_id": "buchheit-2014",
+            "pagina": 5,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "schneider-2018-c010",
+            "doc_id": "schneider-2018",
+            "pagina": 4,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "buchheit-2014-c004",
+            "doc_id": "buchheit-2014",
+            "pagina": 2,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "buchheit-2014-c013",
+            "doc_id": "buchheit-2014",
+            "pagina": 5,
+            "encontrado_por": "bm25+vectorial"
+          },
+          {
+            "chunk_id": "schneider-2018-c011",
+            "doc_id": "schneider-2018",
+            "pagina": 4,
+            "encontrado_por": "bm25+vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      }
+    ],
+    "vectorial": [
+      {
+        "id": "q1",
+        "pregunta": "¿Cómo se calcula la carga de entrenamiento con el método session-RPE de Foster y qué tan válido es?",
+        "tipo": "sigla + nombre propio (session-RPE, Foster)",
+        "esperado": "haddad-2017",
+        "recuperados": [
+          {
+            "chunk_id": "haddad-2017-c001",
+            "doc_id": "haddad-2017",
+            "pagina": 1,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c002",
+            "doc_id": "haddad-2017",
+            "pagina": 2,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c006",
+            "doc_id": "haddad-2017",
+            "pagina": 4,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c004",
+            "doc_id": "haddad-2017",
+            "pagina": 3,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "haddad-2017-c005",
+            "doc_id": "haddad-2017",
+            "pagina": 3,
+            "encontrado_por": "vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q2",
+        "pregunta": "¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz para medir la distancia y la velocidad pico en deportes de equipo?",
+        "tipo": "término técnico + cifras (GNSS, 10 Hz, 18 Hz)",
+        "esperado": "beato-2018",
+        "recuperados": [
+          {
+            "chunk_id": "beato-2018-c011",
+            "doc_id": "beato-2018",
+            "pagina": 5,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c005",
+            "doc_id": "beato-2018",
+            "pagina": 2,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c012",
+            "doc_id": "beato-2018",
+            "pagina": 6,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c007",
+            "doc_id": "beato-2018",
+            "pagina": 4,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "beato-2018-c001",
+            "doc_id": "beato-2018",
+            "pagina": 1,
+            "encontrado_por": "vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q3",
+        "pregunta": "¿Es más útil el índice de Hooper o la variabilidad de la frecuencia cardíaca (HRV) para seguir la fatiga en los días posteriores a un partido de fútbol?",
+        "tipo": "nombre propio (índice de Hooper) + sigla (HRV)",
+        "esperado": "rabbani-2019",
+        "recuperados": [
+          {
+            "chunk_id": "rabbani-2019-c002",
+            "doc_id": "rabbani-2019",
+            "pagina": 1,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c001",
+            "doc_id": "rabbani-2019",
+            "pagina": 1,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c014",
+            "doc_id": "rabbani-2019",
+            "pagina": 6,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c004",
+            "doc_id": "rabbani-2019",
+            "pagina": 2,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rabbani-2019-c016",
+            "doc_id": "rabbani-2019",
+            "pagina": 6,
+            "encontrado_por": "vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q4",
+        "pregunta": "¿Se pueden predecir las lesiones de jugadores de fútbol profesional a partir de los datos de GPS de los entrenamientos con machine learning?",
+        "tipo": "conceptual (pregunta de significado, sin siglas raras)",
+        "esperado": "rossi-2018",
+        "recuperados": [
+          {
+            "chunk_id": "rossi-2018-c000",
+            "doc_id": "rossi-2018",
+            "pagina": 1,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c001",
+            "doc_id": "rossi-2018",
+            "pagina": 1,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c005",
+            "doc_id": "rossi-2018",
+            "pagina": 3,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c015",
+            "doc_id": "rossi-2018",
+            "pagina": 11,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "rossi-2018-c004",
+            "doc_id": "rossi-2018",
+            "pagina": 2,
+            "encontrado_por": "vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q5",
+        "pregunta": "¿Qué medidas de frecuencia cardíaca en reposo, durante el ejercicio y en la recuperación post-ejercicio (HRR) sirven para monitorear el estado de entrenamiento?",
+        "tipo": "conceptual con dos papers relevantes (HRR, HRV)",
+        "esperado": "buchheit-2014",
+        "recuperados": [
+          {
+            "chunk_id": "buchheit-2014-c012",
+            "doc_id": "buchheit-2014",
+            "pagina": 5,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "buchheit-2014-c001",
+            "doc_id": "buchheit-2014",
+            "pagina": 1,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "schneider-2018-c010",
+            "doc_id": "schneider-2018",
+            "pagina": 4,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "buchheit-2014-c004",
+            "doc_id": "buchheit-2014",
+            "pagina": 2,
+            "encontrado_por": "vectorial"
+          },
+          {
+            "chunk_id": "buchheit-2014-c024",
+            "doc_id": "buchheit-2014",
+            "pagina": 10,
+            "encontrado_por": "vectorial"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      }
+    ],
+    "bm25": [
+      {
+        "id": "q1",
+        "pregunta": "¿Cómo se calcula la carga de entrenamiento con el método session-RPE de Foster y qué tan válido es?",
+        "tipo": "sigla + nombre propio (session-RPE, Foster)",
+        "esperado": "haddad-2017",
+        "recuperados": [
+          {
+            "chunk_id": "haddad-2017-c001",
+            "doc_id": "haddad-2017",
+            "pagina": 1,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "haddad-2017-c005",
+            "doc_id": "haddad-2017",
+            "pagina": 3,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "haddad-2017-c000",
+            "doc_id": "haddad-2017",
+            "pagina": 1,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "haddad-2017-c004",
+            "doc_id": "haddad-2017",
+            "pagina": 3,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "haddad-2017-c016",
+            "doc_id": "haddad-2017",
+            "pagina": 11,
+            "encontrado_por": "bm25"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q2",
+        "pregunta": "¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz para medir la distancia y la velocidad pico en deportes de equipo?",
+        "tipo": "término técnico + cifras (GNSS, 10 Hz, 18 Hz)",
+        "esperado": "beato-2018",
+        "recuperados": [
+          {
+            "chunk_id": "beato-2018-c010",
+            "doc_id": "beato-2018",
+            "pagina": 5,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "beato-2018-c004",
+            "doc_id": "beato-2018",
+            "pagina": 2,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "beato-2018-c007",
+            "doc_id": "beato-2018",
+            "pagina": 4,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "beato-2018-c012",
+            "doc_id": "beato-2018",
+            "pagina": 6,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "beato-2018-c001",
+            "doc_id": "beato-2018",
+            "pagina": 1,
+            "encontrado_por": "bm25"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q3",
+        "pregunta": "¿Es más útil el índice de Hooper o la variabilidad de la frecuencia cardíaca (HRV) para seguir la fatiga en los días posteriores a un partido de fútbol?",
+        "tipo": "nombre propio (índice de Hooper) + sigla (HRV)",
+        "esperado": "rabbani-2019",
+        "recuperados": [
+          {
+            "chunk_id": "rabbani-2019-c001",
+            "doc_id": "rabbani-2019",
+            "pagina": 1,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "rabbani-2019-c002",
+            "doc_id": "rabbani-2019",
+            "pagina": 1,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "rabbani-2019-c014",
+            "doc_id": "rabbani-2019",
+            "pagina": 6,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "rabbani-2019-c004",
+            "doc_id": "rabbani-2019",
+            "pagina": 2,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "rabbani-2019-c016",
+            "doc_id": "rabbani-2019",
+            "pagina": 6,
+            "encontrado_por": "bm25"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      },
+      {
+        "id": "q4",
+        "pregunta": "¿Se pueden predecir las lesiones de jugadores de fútbol profesional a partir de los datos de GPS de los entrenamientos con machine learning?",
+        "tipo": "conceptual (pregunta de significado, sin siglas raras)",
+        "esperado": "rossi-2018",
+        "recuperados": [
+          {
+            "chunk_id": "rossi-2018-c000",
+            "doc_id": "rossi-2018",
+            "pagina": 1,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "rossi-2018-c001",
+            "doc_id": "rossi-2018",
+            "pagina": 1,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "torres-ronda-2022-c018",
+            "doc_id": "torres-ronda-2022",
+            "pagina": 11,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "rossi-2018-c015",
+            "doc_id": "rossi-2018",
+            "pagina": 11,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "rossi-2018-c007",
+            "doc_id": "rossi-2018",
+            "pagina": 5,
+            "encontrado_por": "bm25"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 0.8,
+        "rr": 1.0
+      },
+      {
+        "id": "q5",
+        "pregunta": "¿Qué medidas de frecuencia cardíaca en reposo, durante el ejercicio y en la recuperación post-ejercicio (HRR) sirven para monitorear el estado de entrenamiento?",
+        "tipo": "conceptual con dos papers relevantes (HRR, HRV)",
+        "esperado": "buchheit-2014",
+        "recuperados": [
+          {
+            "chunk_id": "buchheit-2014-c012",
+            "doc_id": "buchheit-2014",
+            "pagina": 5,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "schneider-2018-c010",
+            "doc_id": "schneider-2018",
+            "pagina": 4,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "buchheit-2014-c013",
+            "doc_id": "buchheit-2014",
+            "pagina": 5,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "buchheit-2014-c006",
+            "doc_id": "buchheit-2014",
+            "pagina": 3,
+            "encontrado_por": "bm25"
+          },
+          {
+            "chunk_id": "schneider-2018-c016",
+            "doc_id": "schneider-2018",
+            "pagina": 7,
+            "encontrado_por": "bm25"
+          }
+        ],
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0
+      }
+    ]
+  },
+  "control_umbral": {
+    "umbral": 0.703,
+    "filas": [
+      {
+        "id": "q1",
+        "tipo": "golden",
+        "pregunta": "¿Cómo se calcula la carga de entrenamiento con el método session-RPE de Foster y qué tan válido es?",
+        "similitud_maxima": 0.7701,
+        "esperado": "con evidencia",
+        "ok": true
+      },
+      {
+        "id": "q2",
+        "tipo": "golden",
+        "pregunta": "¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz para medir la distancia y la velocidad pico en deportes de equipo?",
+        "similitud_maxima": 0.8218,
+        "esperado": "con evidencia",
+        "ok": true
+      },
+      {
+        "id": "q3",
+        "tipo": "golden",
+        "pregunta": "¿Es más útil el índice de Hooper o la variabilidad de la frecuencia cardíaca (HRV) para seguir la fatiga en los días posteriores a un partido de fútbol?",
+        "similitud_maxima": 0.8331,
+        "esperado": "con evidencia",
+        "ok": true
+      },
+      {
+        "id": "q4",
+        "tipo": "golden",
+        "pregunta": "¿Se pueden predecir las lesiones de jugadores de fútbol profesional a partir de los datos de GPS de los entrenamientos con machine learning?",
+        "similitud_maxima": 0.823,
+        "esperado": "con evidencia",
+        "ok": true
+      },
+      {
+        "id": "q5",
+        "tipo": "golden",
+        "pregunta": "¿Qué medidas de frecuencia cardíaca en reposo, durante el ejercicio y en la recuperación post-ejercicio (HRR) sirven para monitorear el estado de entrenamiento?",
+        "similitud_maxima": 0.7603,
+        "esperado": "con evidencia",
+        "ok": true
+      },
+      {
+        "id": "t1",
+        "tipo": "trampa",
+        "pregunta": "¿Qué dosis de cafeína en mg por kg de peso corporal mejora el rendimiento en sprints repetidos?",
+        "similitud_maxima": 0.6454,
+        "esperado": "sin evidencia",
+        "ok": true
+      },
+      {
+        "id": "t2",
+        "tipo": "trampa",
+        "pregunta": "¿Cuántos gramos de proteína por kilo de peso al día necesita un futbolista profesional durante la temporada?",
+        "similitud_maxima": 0.6144,
+        "esperado": "sin evidencia",
+        "ok": true
+      }
+    ],
+    "min_similitud_golden": 0.7603,
+    "max_similitud_trampa": 0.6454,
+    "umbral_sugerido": 0.703,
+    "pasa": true
+  },
+  "verificaciones": {
+    "papers_del_golden_set_en_pinecone": true
+  }
+}

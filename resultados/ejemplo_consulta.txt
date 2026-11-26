@@ -1,0 +1,50 @@
+$ python consultar.py "¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz?" --modo hibrido
+Pregunta: ¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz?
+Modo: hibrido | top-5
+Similitud máxima: 0.719 (umbral 0.70) -> hay evidencia
+------------------------------------------------------------------------------
+[1] beato-2018 | Beato M et al. (2018) | p. 6 | encontrado por: bm25+vectorial
+    categorías: validez_dispositivos, tecnologia_tracking, carga_externa | doi: 10.3389/fphys.2018.01288
+    In the current study, the same number of satellites (average 20, ranged 18–21) and horizontal dilution of precision were found during the trials (0.4 ± 0) for both Apex models. As reported above, the STATSports Apex 10 Hz device utilizes a multi-band GNSS receiver in combination with corrected [...]
+[2] beato-2018 | Beato M et al. (2018) | p. 2-3 | encontrado por: bm25+vectorial
+    categorías: validez_dispositivos, tecnologia_tracking, carga_externa | doi: 10.3389/fphys.2018.01288
+    To date, no validation and comparison studies of the Apex 10 and 18 Hz exist; therefore, it would be acknowledgeable to report accuracy data of such units and existing differences between the models, which could offer important practical applications for practitioners working in sport [...]
+[3] beato-2018 | Beato M et al. (2018) | p. 4 | encontrado por: bm25+vectorial
+    categorías: validez_dispositivos, tecnologia_tracking, carga_externa | doi: 10.3389/fphys.2018.01288
+    The Apex units (10 and 18 Hz) were turned on about 10– 15 min before the beginning of the test, while the subjects were familiarized with the equipment as well as the protocol procedures. Apex units present the following characteristics: dimension 30 mm (wide) × 80 mm (high), weight 48 g, 100 [...]
+[4] beato-2018 | Beato M et al. (2018) | p. 2 | encontrado por: bm25+vectorial
+    categorías: validez_dispositivos, tecnologia_tracking, carga_externa | doi: 10.3389/fphys.2018.01288
+    Greater accuracy in the data collected may help sport scientists through understanding the players’ performances over a given training session, as well as small variations worth of interest in the players’ physical loads and efforts load among sessions. This is particularly relevant at [...]
+[5] beato-2018 | Beato M et al. (2018) | p. 5 | encontrado por: bm25+vectorial
+    categorías: validez_dispositivos, tecnologia_tracking, carga_externa | doi: 10.3389/fphys.2018.01288
+    GNSS is a technology commonly used to evaluate external training load (e.g., TD, Vpeak, accelerations, sprints, etc.) in team sports (Buchheit et al., 2014a; Rampinini et al., 2015; Akenhead and Nassis, 2016; Beato and Jamil, 2018; Hoppe et al., 2018). Previous studies reported that GNSS [...]
+
+$ python consultar.py "¿Cómo cambia la HRV después de un partido?" --modo hibrido --categoria frecuencia_cardiaca
+Pregunta: ¿Cómo cambia la HRV después de un partido?
+Modo: hibrido | top-5 | categoría: frecuencia_cardiaca
+Similitud máxima: 0.756 (umbral 0.70) -> hay evidencia
+------------------------------------------------------------------------------
+[1] rabbani-2019 | Rabbani A et al. (2019) | p. 1 | encontrado por: bm25+vectorial
+    categorías: fatiga_recuperacion, bienestar, frecuencia_cardiaca | doi: 10.3389/fphys.2019.00109
+    Rabbani A, Clemente FM, Kargarfard M and Chamari K (2019) Match Fatigue Time-Course Assessment Over Four Days: Usefulness of the Hooper Index and Heart Rate Variability in Professional Soccer Players. Front. Physiol. 10:109. doi: 10.3389/fphys.2019.00109 Match Fatigue Time-Course Assessment [...]
+[2] buchheit-2014 | Buchheit M et al. (2014) | p. 5-6 | encontrado por: bm25+vectorial
+    categorías: frecuencia_cardiaca, estado_entrenamiento | doi: 10.3389/fphys.2014.00073
+    Post-exercise heart rate variability Post-exercise HRV has received a growing interest within the past decade, with the belief that it would bring better information on training adaptations than that provided by resting HRV or HRR (Yamamoto et al., 2001). The determinants of post-exercise HRV [...]
+[3] rabbani-2019 | Rabbani A et al. (2019) | p. 5 | encontrado por: vectorial
+    categorías: fatiga_recuperacion, bienestar, frecuencia_cardiaca | doi: 10.3389/fphys.2019.00109
+    However, mean values of changes in Hooper-Index and Ln rMSSD showed an inverse nearly perfect relationship [r = 0.94, (−0.99; −0.51)] (Figure 4). DISCUSSION The purpose of this study was to examine the usefulness and recovery time-course of the Hooper-Index and HRV in TABLE 3 | Individual [...]
+[4] rabbani-2019 | Rabbani A et al. (2019) | p. 2 | encontrado por: vectorial
+    categorías: fatiga_recuperacion, bienestar, frecuencia_cardiaca | doi: 10.3389/fphys.2019.00109
+    INTRODUCTION Professional soccer players are exposed to spikes in training load arising from official matches during in-season phases (Thorpe et al., 2015, 2016b; Rabbani et al., 2018). Research has shown impairments in physiological and performance measures following high training load [...]
+[5] rabbani-2019 | Rabbani A et al. (2019) | p. 1 | encontrado por: vectorial
+    categorías: fatiga_recuperacion, bienestar, frecuencia_cardiaca | doi: 10.3389/fphys.2019.00109
+    While group analyses showed a similar pattern for recovery time-course, more individual players responded, similarly when tracked using the Hooper -Index compared to when they were tracked using HRV. An inverse moderate within-individual relationship was observed between changes in the Hooper [...]
+
+$ python consultar.py "¿Qué dosis de cafeína mejora el rendimiento en sprints repetidos?" --modo hibrido --responder
+Pregunta: ¿Qué dosis de cafeína mejora el rendimiento en sprints repetidos?
+Modo: hibrido | top-5
+Similitud máxima: 0.661 (umbral 0.70) -> SIN EVIDENCIA SUFICIENTE en la biblioteca
+------------------------------------------------------------------------------
+No lo sé con los papers disponibles.
+------------------------------------------------------------------------------
+

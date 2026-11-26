@@ -1,0 +1,12 @@
+[
+  {
+    "id": "t1",
+    "pregunta": "¿Qué dosis de cafeína en mg por kg de peso corporal mejora el rendimiento en sprints repetidos?",
+    "motivo": "Mismo dominio (rendimiento deportivo), pero ningún paper de la biblioteca estudia la cafeína. El LLM conoce una cifra de memoria: si la diera, estaría alucinando."
+  },
+  {
+    "id": "t2",
+    "pregunta": "¿Cuántos gramos de proteína por kilo de peso al día necesita un futbolista profesional durante la temporada?",
+    "motivo": "Nutrición deportiva: está fuera de la biblioteca (monitoreo de carga, fatiga, dispositivos y lesiones)."
+  }
+]

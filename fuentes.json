@@ -1,0 +1,90 @@
+[
+  {
+    "id": "torres-ronda-2022",
+    "titulo": "Tracking Systems in Team Sports: A Narrative Review of Applications of the Data and Sport Specific Analysis",
+    "autores": "Torres-Ronda L, Beanland E, Whitehead S, Sweeting A, Clubb J",
+    "anio": 2022,
+    "revista": "Sports Medicine - Open, 8:15",
+    "doi": "10.1186/s40798-022-00408-z",
+    "url_pdf": "https://sportsmedicine-open.springeropen.com/track/pdf/10.1186/s40798-022-00408-z",
+    "licencia": "CC BY 4.0",
+    "categorias": ["carga_externa", "tecnologia_tracking"]
+  },
+  {
+    "id": "haddad-2017",
+    "titulo": "Session-RPE Method for Training Load Monitoring: Validity, Ecological Usefulness, and Influencing Factors",
+    "autores": "Haddad M, Stylianides G, Djaoui L, Dellal A, Chamari K",
+    "anio": 2017,
+    "revista": "Frontiers in Neuroscience, 11:612",
+    "doi": "10.3389/fnins.2017.00612",
+    "url_pdf": "https://www.frontiersin.org/articles/10.3389/fnins.2017.00612/pdf",
+    "licencia": "CC BY 4.0",
+    "categorias": ["carga_interna", "percepcion_esfuerzo"]
+  },
+  {
+    "id": "beato-2018",
+    "titulo": "The Validity and Between-Unit Variability of GNSS Units (STATSports Apex 10 and 18 Hz) for Measuring Distance and Peak Speed in Team Sports",
+    "autores": "Beato M, Coratella G, Stiff A, Dello Iacono A",
+    "anio": 2018,
+    "revista": "Frontiers in Physiology, 9:1288",
+    "doi": "10.3389/fphys.2018.01288",
+    "url_pdf": "https://www.frontiersin.org/articles/10.3389/fphys.2018.01288/pdf",
+    "licencia": "CC BY 4.0",
+    "categorias": ["validez_dispositivos", "tecnologia_tracking", "carga_externa"]
+  },
+  {
+    "id": "buchheit-2014",
+    "titulo": "Monitoring training status with HR measures: do all roads lead to Rome?",
+    "autores": "Buchheit M",
+    "anio": 2014,
+    "revista": "Frontiers in Physiology, 5:73",
+    "doi": "10.3389/fphys.2014.00073",
+    "url_pdf": "https://www.frontiersin.org/articles/10.3389/fphys.2014.00073/pdf",
+    "licencia": "CC BY",
+    "categorias": ["frecuencia_cardiaca", "estado_entrenamiento"]
+  },
+  {
+    "id": "schneider-2018",
+    "titulo": "Heart Rate Monitoring in Team Sports—A Conceptual Framework for Contextualizing Heart Rate Measures for Training and Recovery Prescription",
+    "autores": "Schneider C, Hanakam F, Wiewelhove T, Döweling A, Kellmann M, Meyer T, Pfeiffer M, Ferrauti A",
+    "anio": 2018,
+    "revista": "Frontiers in Physiology, 9:639",
+    "doi": "10.3389/fphys.2018.00639",
+    "url_pdf": "https://www.frontiersin.org/articles/10.3389/fphys.2018.00639/pdf",
+    "licencia": "CC BY 4.0",
+    "categorias": ["frecuencia_cardiaca", "fatiga_recuperacion"]
+  },
+  {
+    "id": "rabbani-2019",
+    "titulo": "Match Fatigue Time-Course Assessment Over Four Days: Usefulness of the Hooper Index and Heart Rate Variability in Professional Soccer Players",
+    "autores": "Rabbani A, Clemente FM, Kargarfard M, Chamari K",
+    "anio": 2019,
+    "revista": "Frontiers in Physiology, 10:109",
+    "doi": "10.3389/fphys.2019.00109",
+    "url_pdf": "https://www.frontiersin.org/articles/10.3389/fphys.2019.00109/pdf",
+    "licencia": "CC BY",
+    "categorias": ["fatiga_recuperacion", "bienestar", "frecuencia_cardiaca"]
+  },
+  {
+    "id": "gomez-carmona-2020",
+    "titulo": "Accelerometry as a method for external workload monitoring in invasion team sports. A systematic review",
+    "autores": "Gómez-Carmona CD, Bastida-Castillo A, Ibáñez SJ, Pino-Ortega J",
+    "anio": 2020,
+    "revista": "PLoS ONE, 15(8): e0236643",
+    "doi": "10.1371/journal.pone.0236643",
+    "url_pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0236643&type=printable",
+    "licencia": "CC BY 4.0",
+    "categorias": ["carga_externa", "acelerometria"]
+  },
+  {
+    "id": "rossi-2018",
+    "titulo": "Effective injury forecasting in soccer with GPS training data and machine learning",
+    "autores": "Rossi A, Pappalardo L, Cintia P, Iaia FM, Fernàndez J, Medina D",
+    "anio": 2018,
+    "revista": "PLoS ONE, 13(7): e0201264",
+    "doi": "10.1371/journal.pone.0201264",
+    "url_pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0201264&type=printable",
+    "licencia": "CC BY 4.0",
+    "categorias": ["lesiones", "machine_learning", "carga_externa"]
+  }
+]

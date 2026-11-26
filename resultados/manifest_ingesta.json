@@ -1,0 +1,21 @@
+{
+  "huella": "60c2484c65a3de7d9b280c27f60c125c521de43f032556c514d1916469bd9418",
+  "indice": "papers-ciencias-deporte",
+  "namespace": "papers-cientificos",
+  "chunks": 202,
+  "embeddings_model": "gemini-embedding-001",
+  "embeddings_dim": 1536,
+  "chunk_size_tokens": 700,
+  "chunk_overlap_tokens": 100,
+  "documentos": [
+    "beato-2018.md",
+    "buchheit-2014.md",
+    "gomez-carmona-2020.md",
+    "haddad-2017.md",
+    "rabbani-2019.md",
+    "rossi-2018.md",
+    "schneider-2018.md",
+    "torres-ronda-2022.md"
+  ],
+  "fecha": "2026-11-26T10:12:48"
+}

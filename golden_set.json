@@ -1,0 +1,36 @@
+[
+  {
+    "id": "q1",
+    "pregunta": "¿Cómo se calcula la carga de entrenamiento con el método session-RPE de Foster y qué tan válido es?",
+    "documento_id_esperado": "haddad-2017",
+    "tipo": "sigla + nombre propio (session-RPE, Foster)"
+  },
+  {
+    "id": "q2",
+    "pregunta": "¿Qué validez tienen las unidades GNSS de 10 Hz y 18 Hz para medir la distancia y la velocidad pico en deportes de equipo?",
+    "documento_id_esperado": "beato-2018",
+    "tipo": "término técnico + cifras (GNSS, 10 Hz, 18 Hz)"
+  },
+  {
+    "id": "q3",
+    "pregunta": "¿Es más útil el índice de Hooper o la variabilidad de la frecuencia cardíaca (HRV) para seguir la fatiga en los días posteriores a un partido de fútbol?",
+    "documento_id_esperado": "rabbani-2019",
+    "tipo": "nombre propio (índice de Hooper) + sigla (HRV)"
+  },
+  {
+    "id": "q4",
+    "pregunta": "¿Se pueden predecir las lesiones de jugadores de fútbol profesional a partir de los datos de GPS de los entrenamientos con machine learning?",
+    "documento_id_esperado": "rossi-2018",
+    "tipo": "conceptual (pregunta de significado, sin siglas raras)"
+  },
+  {
+    "id": "q5",
+    "pregunta": "¿Qué medidas de frecuencia cardíaca en reposo, durante el ejercicio y en la recuperación post-ejercicio (HRR) sirven para monitorear el estado de entrenamiento?",
+    "documento_id_esperado": "buchheit-2014",
+    "documentos_relevantes": [
+      "buchheit-2014",
+      "schneider-2018"
+    ],
+    "tipo": "conceptual con dos papers relevantes (HRR, HRV)"
+  }
+]

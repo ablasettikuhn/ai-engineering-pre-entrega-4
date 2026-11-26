@@ -1,0 +1,11 @@
+10:28:57 | INFO    | setup | El índice 'papers-ciencias-deporte' ya existe.
+10:29:01 | INFO    | rag | Corpus cargado desde Pinecone: 202 chunks de 8 papers (namespace 'papers-cientificos')
+10:29:02 | INFO    | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+10:29:02 | INFO    | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+10:29:03 | INFO    | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+10:29:03 | INFO    | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+10:29:03 | INFO    | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+10:29:04 | INFO    | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+10:29:04 | INFO    | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+10:29:04 | INFO    | evaluacion | Reporte guardado en resultados/reporte_evaluacion.json y .txt
+10:29:04 | INFO    | evaluacion | README.md actualizado con la tabla de métricas.
