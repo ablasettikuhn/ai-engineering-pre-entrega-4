@@ -46,6 +46,7 @@ Cada requisito, el archivo que lo implementa, el comando que lo ejecuta y la evi
 | Reporte en consola y resumen en el README | `evaluate.py` imprime el reporte y escribe la tabla en este README | `python evaluate.py --actualizar-readme` | Sección [Resultados](#resultados-de-la-evaluación) |
 | Instrucciones para replicar el índice | Este README | — | Sección [Cómo replicar el índice](#cómo-replicar-el-índice) |
 
+---
 
 ## Arquitectura
 
