@@ -10,7 +10,11 @@ Módulo de Recuperación Escalable: un pipeline de ingesta a **Pinecone Serverle
 
 **El problema.** El staff de rendimiento de un club (preparadores físicos, fisiólogos, readaptadores) toma decisiones diarias sobre carga, fatiga y riesgo de lesión. La evidencia está en papers científicos en inglés, y las preguntas surgen en español y con prisa: *"¿el índice de Hooper sirve más que la HRV después de un partido?"*, *"¿qué tan válidas son las unidades GNSS de 10 Hz?"*.
 
-**La solución.** Un buscador que devuelve los 5 fragmentos de papers más relevantes, con autor, año, página y DOI para citarlos. Opcionalmente, Gemini redacta una respuesta citando esos fragmentos.
+Consultar un asistente de IA general no resuelve el problema. Responde con su conocimiento general, sin mostrar de qué estudio sale cada dato, y puede "alucinar": dar cifras o afirmaciones convincentes que ningún estudio respalda. Además, no distingue qué evidencia es la más sólida para una disciplina específica, como el monitoreo de la carga en deportes de equipo. En un staff de rendimiento, una cifra inventada sobre fatiga o riesgo de lesión puede terminar en una mala decisión sobre un jugador.
+
+**La solución.** Un buscador que responde **solo con la biblioteca de papers que elige el staff**, y devuelve los 5 fragmentos más relevantes con autor, año, página y DOI para verificarlos. Opcionalmente, Gemini redacta una respuesta citando esos fragmentos. Si la biblioteca no tiene evidencia sobre la pregunta, el sistema responde "No lo sé" en lugar de inventar.
+
+**Pensado para crecer.** Hoy la biblioteca tiene 8 papers. Mañana pueden ser cientos, y también otros tipos de documentos: protocolos internos del club, informes médicos o guías de las federaciones. Por eso los datos viven en un índice en la nube (Pinecone Serverless), que escala sin cambiar el código, y cada tipo de documento puede ir en su propio namespace.
 
 **Por qué en la nube y por qué híbrido:**
 
