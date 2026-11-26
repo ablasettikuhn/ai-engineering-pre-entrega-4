@@ -46,15 +46,6 @@ Cada requisito, el archivo que lo implementa, el comando que lo ejecuta y la evi
 | Reporte en consola y resumen en el README | `evaluate.py` imprime el reporte y escribe la tabla en este README | `python evaluate.py --actualizar-readme` | Sección [Resultados](#resultados-de-la-evaluación) |
 | Instrucciones para replicar el índice | Este README | — | Sección [Cómo replicar el índice](#cómo-replicar-el-índice) |
 
-### Mejoras aplicadas a partir de la devolución de la Pre-entrega 3
-
-| Observación del profesor | Qué se hizo en esta entrega |
-|---|---|
-| `requirements.txt` con `>=`, sin versiones fijas | Todas las dependencias tienen versión fija (`==`): las mismas con las que se generaron los resultados de `resultados/` |
-| Una sola pregunta trampa; sumar otra o un umbral mínimo de similitud | Ambas cosas: **dos preguntas trampa** (`preguntas_trampa.json`) y un **umbral mínimo de similitud** (`UMBRAL_SIMILITUD`). `evaluate.py` verifica que el umbral separe las preguntas reales de las trampa, imprime PASA/FALLA y sugiere un umbral si no las separa. Con `--responder`, una pregunta bajo el umbral recibe "No lo sé" sin llamar al LLM |
-| Corrección automática: pedir archivos explícitos, instrucciones de ejecución y evidencia verificable por criterio | La tabla anterior vincula cada requisito con su archivo, su comando y su evidencia en `resultados/`. El log de la ingesta acumula las ejecuciones para mostrar tanto la indexación como la segunda ejecución sin re-indexar |
-
----
 
 ## Arquitectura
 
