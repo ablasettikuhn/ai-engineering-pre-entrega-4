@@ -1,5 +1,7 @@
 # Pre-entrega 4: Sistema RAG escalable en la nube con Pinecone
 
+**Español** | [English](README.en.md)
+
 **Comisión #102135 · CoderHouse · Alexandra Blasetti Kuhn**
 
 Módulo de Recuperación Escalable: un pipeline de ingesta a **Pinecone Serverless**, un **recuperador híbrido** (BM25 + búsqueda vectorial combinados con `EnsembleRetriever`) y un script de **evaluación** con Precision@5 y Recall@5 sobre un Golden Set.
@@ -10,7 +12,11 @@ Módulo de Recuperación Escalable: un pipeline de ingesta a **Pinecone Serverle
 
 **El problema.** El staff de rendimiento de un club (preparadores físicos, fisiólogos, readaptadores) toma decisiones diarias sobre carga, fatiga y riesgo de lesión. La evidencia está en papers científicos en inglés, y las preguntas surgen en español y con prisa: *"¿el índice de Hooper sirve más que la HRV después de un partido?"*, *"¿qué tan válidas son las unidades GNSS de 10 Hz?"*.
 
-**La solución.** Un buscador que devuelve los 5 fragmentos de papers más relevantes, con autor, año, página y DOI para citarlos. Opcionalmente, Gemini redacta una respuesta citando esos fragmentos.
+Consultar un asistente de IA general no resuelve el problema. Responde con su conocimiento general, sin mostrar de qué estudio sale cada dato, y puede "alucinar": dar cifras o afirmaciones convincentes que ningún estudio respalda. Además, no distingue qué evidencia es la más sólida para una disciplina específica, como el monitoreo de la carga en deportes de equipo. En un staff de rendimiento, una cifra inventada sobre fatiga o riesgo de lesión puede terminar en una mala decisión sobre un jugador.
+
+**La solución.** Un buscador que responde **solo con la biblioteca de papers que elige el staff**, y devuelve los 5 fragmentos más relevantes con autor, año, página y DOI para verificarlos. Opcionalmente, Gemini redacta una respuesta citando esos fragmentos. Si la biblioteca no tiene evidencia sobre la pregunta, el sistema responde "No lo sé" en lugar de inventar.
+
+**Pensado para crecer.** Hoy la biblioteca tiene 8 papers. Mañana pueden ser cientos, y también otros tipos de documentos: protocolos internos del club, informes médicos o guías de las federaciones. Por eso los datos viven en un índice en la nube (Pinecone Serverless), que escala sin cambiar el código, y cada tipo de documento puede ir en su propio namespace.
 
 **Por qué en la nube y por qué híbrido:**
 
@@ -45,14 +51,6 @@ Cada requisito, el archivo que lo implementa, el comando que lo ejecuta y la evi
 | `evaluate.py` con benchmark de 5 preguntas, Recall@5 y Precision@5 | `evaluate.py` + `golden_set.json` | `python evaluate.py --actualizar-readme` | `resultados/reporte_evaluacion.txt` y `.json`; tabla en [Resultados](#resultados-de-la-evaluación) |
 | Reporte en consola y resumen en el README | `evaluate.py` imprime el reporte y escribe la tabla en este README | `python evaluate.py --actualizar-readme` | Sección [Resultados](#resultados-de-la-evaluación) |
 | Instrucciones para replicar el índice | Este README | — | Sección [Cómo replicar el índice](#cómo-replicar-el-índice) |
-
-### Mejoras aplicadas a partir de la devolución de la Pre-entrega 3
-
-| Observación del profesor | Qué se hizo en esta entrega |
-|---|---|
-| `requirements.txt` con `>=`, sin versiones fijas | Todas las dependencias tienen versión fija (`==`): las mismas con las que se generaron los resultados de `resultados/` |
-| Una sola pregunta trampa; sumar otra o un umbral mínimo de similitud | Ambas cosas: **dos preguntas trampa** (`preguntas_trampa.json`) y un **umbral mínimo de similitud** (`UMBRAL_SIMILITUD`). `evaluate.py` verifica que el umbral separe las preguntas reales de las trampa, imprime PASA/FALLA y sugiere un umbral si no las separa. Con `--responder`, una pregunta bajo el umbral recibe "No lo sé" sin llamar al LLM |
-| Corrección automática: pedir archivos explícitos, instrucciones de ejecución y evidencia verificable por criterio | La tabla anterior vincula cada requisito con su archivo, su comando y su evidencia en `resultados/`. El log de la ingesta acumula las ejecuciones para mostrar tanto la indexación como la segunda ejecución sin re-indexar |
 
 ---
 
